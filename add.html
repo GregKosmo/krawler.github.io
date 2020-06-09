@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Add Krawl</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="icon" type="image/x-icon" href="logo.png">
+    <link rel="apple-touch-icon" sizes="512x512" href="logo.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="logo.png">
+    </head>
+
+    <body>
+        <form id="addForm">
+            <label class="form-field">
+                <span class="form-label">Name</span>
+                <input required/>
+            </label>
+            
+            <label class="form-field">
+                <span class="form-label">Start</span>
+                <input type="time" required/>
+            </label>
+
+            <label class="form-field">
+                <span class="form-label">End</span>
+                <input type="time" required/>
+            </label>
+
+            <div class="form-field">
+                <label>
+                    Public
+                    <input type="radio" name="visibility" checked/>
+                </label>
+        
+                <label>
+                    Private
+                    <input type="radio" name="visibility"/>
+                </label>
+            </div>
+        </form>
+
+        <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/7.12.0/firebase-app.js"></script>
+
+        <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+        <script src="https://www.gstatic.com/firebasejs/7.12.0/firebase-analytics.js"></script>
+
+        <!-- Add Firebase products that you want to use -->
+        <script src="https://www.gstatic.com/firebasejs/7.12.0/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.12.0/firebase-firestore.js"></script>
+        <script src="app.js" defer></script>
+        <script src="add.js" defer></script>
+    </body>
+</html>

@@ -1,0 +1,353 @@
+/**
+ * PRIMARY
+ * black - 443742
+ * dark brown - 846C5B
+ * light brown - CEA07E
+ * tan - EDD9A3
+ * gray - EEEEEE
+ *
+ * SECONDARY
+ * blue - 1C85B7
+ * red - F25757
+ * yellow - F2E863
+ * orange - DB9703
+ * purple - C30795
+ * box-shadow - 00000057
+ */
+
+ /*#region Typography*/
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url('./Roboto-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Roboto-Light';
+    src: url('./Roboto-Light.ttf');
+}
+
+@font-face {
+    font-family: 'Roboto-Medium';
+    src: url('./Roboto-Medium.ttf');
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    color: #443742;
+}
+
+html {
+    font-size: 16px;
+    font-family: Roboto-Regular;
+}
+
+body.page-header {
+    margin-top: 3.5rem;
+    height: calc(100% - 3.5rem);
+}
+
+h1 {
+    font-size: 6rem;
+    font-family: Roboto-Light;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    font-weight: normal;
+}
+
+h2 {
+    font-size: 3.75rem;
+    font-family: Roboto-Light;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    font-weight: normal;
+}
+
+h3 {
+    font-size: 3rem;
+    font-family: Roboto-Regular;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    font-weight: normal;
+}
+
+h4 {
+    font-size: 2.125rem;
+    font-family: Roboto-Regular;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    font-weight: normal;
+}
+
+h5 {
+    font-size: 1.5rem;
+    font-family: Roboto-Regular;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    font-weight: normal;
+}
+
+h6 {
+    font-size: 1.25rem;
+    font-family: Roboto-Medium;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    font-weight: normal;
+}
+
+.caption {
+    font-size: .75rem;
+    line-height: 1rem;
+}
+
+input {
+    font-family: Roboto-Regular;
+    font-size: 1rem;
+    color: #443742;
+}
+
+input:not([type="radio"]):not([type="checkbox"]) {
+    height: 2rem;
+    box-sizing: border-box;
+    border-color: #443742;
+    border-width: 0 0 2px 0;
+    width: 100%;
+    padding: .5rem;
+}
+
+input[type="radio"] {
+    height: 1rem;
+    width: 1rem;
+    margin: 0;
+    vertical-align: middle;
+}
+
+input[type="checkbox"] {
+    height: 1rem;
+    width: 1rem;
+    margin: 0;
+    cursor: pointer;
+    vertical-align: middle;
+}
+/*#endregion*/
+
+.main-map {
+    height: 50%;
+}
+
+.login-logo {
+    width: 100%;
+    max-width: 256px;
+    margin: 0 auto;
+    display: block;
+}
+
+.form-label {
+    display: block;
+}
+
+.form-field {
+    display: block;
+    padding-top: 1rem;
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 16px;
+}
+
+form {
+    margin: 0 1rem;
+}
+
+app-button {
+    display: inline-block;
+}
+
+app-button:not(:last-child) {
+    margin-right: 1rem;
+}
+
+app-button .app-button {
+    font-family: Roboto-Regular;
+    padding: .5rem 1rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    background: #DB9703;
+    border: none;
+    border-radius: .25rem;
+    cursor: pointer;
+    color: white;
+    box-shadow: 0px 4px 8px #00000057;
+}
+
+app-button .app-button.invisible {
+    color: #DB9703;;
+    background: none;
+    box-shadow: none;
+}
+
+a, app-button .app-button.invisible.link {
+    color: #1C85B7;
+    text-decoration: none;
+    text-transform: none;
+    cursor: pointer;
+}
+
+a:hover, app-button .app-button.invisible.link:hover {
+    text-decoration: underline;
+}
+
+/*#region list-item*/
+list-item {
+    display: block;
+}
+
+list-item .list-item {
+    color: #443742;
+    text-decoration: none;
+    display: block;
+    border: none;
+    font-size: 1rem;
+    width: 100%;
+    padding: 0;
+}
+
+list-item a.list-item, list-item button.list-item {
+    background: transparent;
+    transition: .1s;
+    transition-property: background;
+    cursor: pointer;
+}
+
+list-item a.list-item:hover, list-item button.list-item:hover {
+    background: #EEEEEE;
+}
+
+list-item .list-item .text-container {
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #EEEEEE;
+}
+
+list-item .rightText {
+    margin-left: auto;
+}
+/*#endregion*/
+
+/*#region list-header*/
+list-header {
+    display: block;
+    padding: 1rem;
+}
+/*#endregion*/
+
+/*#region event-list*/
+event-list {
+    display: block;
+    overflow-y: auto;
+    height: 50%;
+}
+/*#endregion*/
+
+/*#region event-detail*/
+event-detail {
+    display: block;
+}
+/*#endregion*/
+
+/*#region floating-action-button*/
+floating-action-button .floating-action-button {
+    position: fixed;
+    padding: 1rem;
+    border-radius: 1.5rem;
+    text-transform: uppercase;
+    background: #DB9703;
+    color: white;
+    box-shadow: 0px 6px 12px #00000057;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    font-size: 1rem;
+}
+
+floating-action-button .floating-action-button.bottom-right {
+    bottom: 1rem;
+    right: 1rem;
+}
+
+floating-action-button .floating-action-button.top-left {
+    top: 1rem;
+    left: 1rem;
+}
+/*#endregion*/
+
+/*#region page-header*/
+page-header {
+    display: flex;
+    box-shadow: 0px 2px 4px #00000057;
+    position: fixed;
+    width: 100%;
+    background: white;
+    top: 0;
+}
+
+page-header .app-button {
+    height: 3.5rem;
+}
+
+page-header h6 {
+    line-height: 3.5rem;
+    margin: 0 auto;
+}
+/*#endregion*/
+
+/*#region left-menu*/
+.left-menu-overlay {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: #00000000;
+    transition: .1s;
+    transition-property: background;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.left-menu-overlay.shown {
+    left: 0;
+    background: #00000050;
+}
+
+.left-menu {
+    top: 0;
+    position: fixed;
+    left: -100%;
+    height: 100%;
+    background: white;
+    transition: .1s;
+    transition-property: left;
+    max-width: 300px;
+    width: 80%;
+    box-shadow: 2px 0px 4px #00000057;
+}
+
+.left-menu.shown {
+    left: 0;
+}
+/*#endregion*/
+
+/*#region name-here*/
+/*#endregion*/
